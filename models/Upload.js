@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const RecipeSchema = new Schema({
+const UploadSchema = new Schema({
   date: {
     type: Date,
     default: Date.now()
@@ -18,4 +18,4 @@ const RecipeSchema = new Schema({
   }
 });
 
-module.exports = mongoose.model("recipe", RecipeSchema);
+module.exports = mongoose.model("upload", UploadSchema);
